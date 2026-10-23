@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angel Engine | Mateo Bernal Arce</title>
+<meta name="description" content="Angel Engine: a tactical grid combat prototype built in Unity by a team of seven. Grid, abilities, bosses and system map.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111111'/%3E%3Crect x='7' y='7' width='8' height='8' fill='%23C8452D'/%3E%3Crect x='17' y='17' width='8' height='8' fill='%23E2A72E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/nord.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="ico-unity" viewBox="0 0 24 24"><path d="m12.9288 4.2939 3.7997 2.1929c.1366.077.1415.2905 0 .3675l-4.515 2.6076a.4192.4192 0 0 1-.4246 0L7.274 6.8543c-.139-.0745-.1415-.293 0-.3675l3.7972-2.193V0L1.3758 5.5977V16.793l3.7177-2.1456v-4.3858c-.0025-.1565.1813-.2682.318-.1838l4.5148 2.6076a.4252.4252 0 0 1 .2136.3676v5.2127c.0025.1565-.1813.2682-.3179.1838l-3.7996-2.1929-3.7178 2.1457L12 24l9.6954-5.5977-3.7178-2.1457-3.7996 2.1929c-.1341.082-.3229-.0248-.3179-.1838V13.053c0-.1565.087-.2956.2136-.3676l4.5149-2.6076c.134-.082.3228.0224.3179.1838v4.3858l3.7177 2.1456V5.5977L12.9288 0Z"/></symbol></svg>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+      MATEO BERNAL
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="angel-engine.html" aria-current="page">Angel Engine</a><a href="friction.html">Friction</a><a href="unity-projects.html">Unity projects</a><a href="unreal.html">Unreal</a><a href="index.html#contact">Contact</a>
+      <a href="media/Mateo_Bernal_Arce_CV.pdf" class="btn btn-ghost" download="Mateo_Bernal_Arce_CV.pdf">Download CV</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main class="page-main"><div class="container"><div class="crumbs"><a href="index.html">Home</a><span class="sep">/</span><span>Angel Engine</span></div><div class="ae" id="angel-engine">
+      <div class="ae-hero">
+        <div class="eyebrow">Flagship project · Team</div>
+        <h3 class="ae-title">Angel <em>Engine</em></h3>
+        <span class="ae-sub">TACTICAL GRID COMBAT · UNITY / C# · 7-PERSON TEAM · U-TAD · 2025–2026</span>
+        <p class="lead">For our final-year team project I worked on both sides of combat: I designed the fights and wrote the code that runs them. Every enemy shares one base class, every ability is built from data, and every dangerous tile is shown to the player before it hurts.</p>
+        <p>My role was <strong>Lead Programmer &amp; Combat Designer</strong> in a team of seven. This page follows the systems in the order the game uses them: the grid, the abilities that act on it, and the enemies and bosses that use them. Each part has footage or screenshots from the build.</p>
+        <div class="stat-row">
+          <div><b>7</b>People on the team</div>
+          <div><b>8 × 4</b>Combat board, two halves</div>
+          <div><b>13</b>Ability target shapes</div>
+          <div><b>3</b>Boss variants on one base class</div>
+        </div>
+        <figure class="vid vid-main" id="vidGameplay" data-src="media/angel-engine/gameplay.mp4" data-poster="media/angel-engine/gameplay-poster.jpg" data-title="Full gameplay"><div class="vid-stage"><div class="vid-fallback"><span class="play"><svg viewBox="0 0 16 16"><path d="M3 1.5v13l11-6.5z"/></svg></span><span class="t">Loading video…</span><span class="p">media/angel-engine/gameplay.mp4</span></div></div><figcaption class="vid-cap"><b>Full gameplay</b>: level map, encounters, abilities, bosses and menus (3:37)</figcaption></figure>
+        <span class="chap-label">Jump to</span>
+        <div class="chapters"><button type="button" class="seek" data-target="vidGameplay" data-t="0"><b>0:00</b>Level map</button><button type="button" class="seek" data-target="vidGameplay" data-t="24"><b>0:24</b>First encounter</button><button type="button" class="seek" data-target="vidGameplay" data-t="48"><b>0:48</b>Abilities Build menu</button><button type="button" class="seek" data-target="vidGameplay" data-t="72"><b>1:12</b>Telegraphed tiles</button><button type="button" class="seek" data-target="vidGameplay" data-t="96"><b>1:36</b>Second arena</button><button type="button" class="seek" data-target="vidGameplay" data-t="120"><b>2:00</b>Boss intro</button><button type="button" class="seek" data-target="vidGameplay" data-t="132"><b>2:12</b>Boss fight</button><button type="button" class="seek" data-target="vidGameplay" data-t="168"><b>2:48</b>Final arena</button><button type="button" class="seek" data-target="vidGameplay" data-t="216"><b>3:36</b>Settings</button></div>
+        <div class="pillars">
+          <div class="pillar"><span class="k">Pillar 01</span><h4>A grid that remembers danger</h4><p><code>GridManager</code> builds the board at runtime and every <code>Tile</code> tracks how dangerous it currently is.</p></div>
+          <div class="pillar"><span class="k">Pillar 02</span><h4>Abilities as data</h4><p><code>AbilityV2</code> reads everything from an <code>AbilityPattern</code> asset. Making an attack means filling in data.</p></div>
+          <div class="pillar"><span class="k">Pillar 03</span><h4>One backbone, many enemies</h4><p><code>EnemyBase</code> carries shared movement and attacks; bosses only override what makes them different.</p></div>
+        </div>
+      </div>
+
+      <nav class="ae-nav" aria-label="Angel Engine sections">
+        <a href="#ae-grid">01 · Grid</a>
+        <a href="#ae-abilities">02 · Abilities</a>
+        <a href="#ae-enemies">03 · Enemies &amp; Bosses</a>
+        <a href="#ae-flow">04 · Flow &amp; UI</a>
+        <a href="#ae-architecture">05 · Architecture</a>
+        <a href="#ae-role">06 · My role</a>
+      </nav>
+
+      <!-- 01 GRID -->
+      <div class="ae-sec" id="ae-grid">
+        <div class="ae-sec-head"><span class="n">01</span><h3>A Grid That Remembers Danger</h3></div>
+        <p><code>GridManager</code> builds a grid of <code>Tile</code> objects at runtime from a width and a height. In the game the board is eight columns by four rows, split in two halves: blue tiles on the player's side and red tiles on the enemy's side. Each tile knows if it is occupied and how dangerous it is right now.</p>
+        <p>When an ability targets a tile, it raises that tile's danger level <em>before</em> the damage lands. Enemies, and eventually players, use that information to read the board and decide where to move. Danger is part of the grid itself, not a visual effect added on top. What you see and what the AI reads are the same data.</p>
+        <div class="arena-grid"><figure><img src="media/angel-engine/arena-1.jpg" alt="Angel Engine arena 1, 8 by 4 combat grid" loading="lazy" onclick="openLightbox(this)"><figcaption>Arena 01: research lab</figcaption></figure><figure><img src="media/angel-engine/arena-2.jpg" alt="Angel Engine arena 2, 8 by 4 combat grid" loading="lazy" onclick="openLightbox(this)"><figcaption>Arena 02: hall</figcaption></figure><figure><img src="media/angel-engine/arena-3.jpg" alt="Angel Engine arena 3, 8 by 4 combat grid" loading="lazy" onclick="openLightbox(this)"><figcaption>Arena 03: toxic lab</figcaption></figure><figure><img src="media/angel-engine/arena-4.jpg" alt="Angel Engine arena 4, 8 by 4 combat grid" loading="lazy" onclick="openLightbox(this)"><figcaption>Arena 04: golden hall</figcaption></figure><figure><img src="media/angel-engine/arena-5.jpg" alt="Angel Engine arena 5, 8 by 4 combat grid" loading="lazy" onclick="openLightbox(this)"><figcaption>Arena 05: forest</figcaption></figure></div>
+        <div class="vid-cap" style="margin-top:12px;">Five arenas, one shared board. Click any image to enlarge.</div>
+        <span class="chap-label">See it in the footage</span>
+        <div class="chapters"><button type="button" class="seek" data-target="vidGameplay" data-t="72"><b>1:12</b>Telegraphed tiles on the board</button><button type="button" class="seek" data-target="vidGameplay" data-t="24"><b>0:24</b>Enemy attack lines over the grid</button></div>
+      </div>
+
+      <!-- 02 ABILITIES -->
+      <div class="ae-sec" id="ae-abilities">
+        <div class="ae-sec-head"><span class="n">02</span><h3>Abilities as Data, Not Code</h3></div>
+        <p><code>AbilityV2</code> gets all its behaviour from an <code>AbilityPattern</code> data asset. To make a new attack you fill in that asset instead of writing ability code. One dispatcher reads the chosen shape and runs the matching routine. The player equips abilities in an <strong>Abilities Build</strong> menu and uses them from a four-slot bar on the HUD.</p>
+        <div class="ae-two">
+          <div>
+            <table class="spec">
+              <tr><th>Category</th><td><b>Offensive</b> · <b>Defensive</b> · <b>Healing</b></td></tr>
+              <tr><th>Target shape</th><td>One of <b>thirteen</b> shapes</td></tr>
+              <tr><th>Damage</th><td>Base and max damage; the hit rolls a value between them</td></tr>
+              <tr><th>Cast time</th><td>How long the ability takes to start</td></tr>
+              <tr><th>Telegraph duration</th><td>How long the danger is shown before it lands</td></tr>
+              <tr><th>Cooldown</th><td>Time before it can be used again</td></tr>
+            </table>
+            <div class="shape-row"><span class="tag">row</span><span class="tag">column</span><span class="tag">cross</span><span class="tag">AoE</span><span class="tag">global sweep</span><span class="tag">snake</span><span class="tag">expansion</span><span class="tag">mirrored double rows</span><span class="tag">single → random follow-up</span><span class="tag">projectile</span><span class="tag more">+ more variants</span></div>
+            <span class="chap-label">See it in the footage</span>
+            <div class="chapters"><button type="button" class="seek" data-target="vidGameplay" data-t="48"><b>0:48</b>Abilities Build menu</button><button type="button" class="seek" data-target="vidGameplay" data-t="72"><b>1:12</b>Shapes hitting the board</button></div>
+          </div>
+          <div>
+            <pre><code class="language-csharp">private void Attack(AbilityPattern data, float dmgMultiple)
+{
+    float damage = Random.Range(data.m_baseDamage, data.m_maxDamage);
+    switch (m_targetType)
+    {
+        case AbilityPattern.TargetType.row:     StartCoroutine(AttackRow(...)); break;
+        case AbilityPattern.TargetType.cross:   StartCoroutine(AttackCross(...)); break;
+        case AbilityPattern.TargetType.AoE:     StartCoroutine(AttackAoE(...)); break;
+        case AbilityPattern.TargetType.snake:   StartCoroutine(AttackSnake(...)); break;
+        case AbilityPattern.TargetType.global:  StartCoroutine(AttackGlobal(...)); break;
+        // ...13 target shapes total, all driven by the same data asset
+    }
+}</code></pre>
+            <div class="code-cap">AbilityV2.cs: one dispatcher, thirteen shapes made by designers</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 ENEMIES -->
+      <div class="ae-sec" id="ae-enemies">
+        <div class="ae-sec-head"><span class="n">03</span><h3>One Base Class, Three Different Bosses</h3></div>
+        <p><code>EnemyBase</code> handles movement, attacks, stun and confuse for every enemy, from basic enemies to bosses. <code>EnemyBoss</code> adds phases and ally waves on top. Three subclasses only change what makes each boss different.</p>
+        <div class="base-strip">
+          <div class="base-card"><span class="k">EnemyBase · extends HealthSystem</span><h4>The shared backbone</h4><p>Movement, attacks, stun and confuse live here once, so every enemy behaves the same way on the grid.</p></div>
+          <div class="base-card"><span class="k">EnemyBoss · extends EnemyBase</span><h4>Phases and ally waves</h4><p>Adds phases triggered by HP and waves of allies. All three bosses build on this.</p></div>
+        </div>
+        <div class="boss-grid">
+          <div class="boss"><span class="bk">Boss 01</span><h4>Heraldo</h4>
+            <p>Three phases triggered by HP. Before each attack he mirrors the player's row or column, so the threat always comes from where you stand.</p></div>
+          <div class="boss"><span class="bk">Boss 02</span><h4>Heraldo Celestial</h4>
+            <p>Phase 3 is a permanent fusion: more max HP and a wider rotation of five moves, not just new attacks.</p></div>
+          <div class="boss"><span class="bk">Boss 03</span><h4>Computer</h4>
+            <p>Invulnerable until it spawns a wave of minions. Then it only takes damage during a timed window. If you miss it, the fight resets.</p></div>
+        </div>
+        <span class="chap-label">Boss encounters in the footage</span>
+        <div class="chapters"><button type="button" class="seek" data-target="vidGameplay" data-t="120"><b>2:00</b>Boss intro</button><button type="button" class="seek" data-target="vidGameplay" data-t="132"><b>2:12</b>Boss fight, hall arena</button><button type="button" class="seek" data-target="vidGameplay" data-t="168"><b>2:48</b>Boss fight, final arena</button></div>
+      </div>
+
+      <!-- 04 FLOW & UI -->
+      <div class="ae-sec" id="ae-flow">
+        <div class="ae-sec-head"><span class="n">04</span><h3>Game Flow &amp; UI</h3></div>
+        <p>Around the combat there is the structure that makes it a complete game: a title screen, a level map where each node is an encounter, dialogue scenes with the protagonist Zeke, an Abilities Build screen and a settings menu with video, sound, language and controls.</p>
+        <div class="flow-grid">
+          <figure class="vid" id="vidMenu" data-src="media/angel-engine/main-menu.mp4" data-poster="media/angel-engine/main-menu-poster.jpg" data-title="Main menu &amp; title"><div class="vid-stage"><div class="vid-fallback"><span class="play"><svg viewBox="0 0 16 16"><path d="M3 1.5v13l11-6.5z"/></svg></span><span class="t">Loading video…</span><span class="p">media/angel-engine/main-menu.mp4</span></div></div><figcaption class="vid-cap"><b>Main menu &amp; title</b>: the Angel Engine title screen</figcaption></figure>
+          <figure class="vid" id="vidDialogs" data-src="media/angel-engine/dialogs.mp4" data-poster="media/angel-engine/dialogs-poster.jpg" data-title="Dialogue scene"><div class="vid-stage"><div class="vid-fallback"><span class="play"><svg viewBox="0 0 16 16"><path d="M3 1.5v13l11-6.5z"/></svg></span><span class="t">Loading video…</span><span class="p">media/angel-engine/dialogs.mp4</span></div></div><figcaption class="vid-cap"><b>Dialogue scene</b>: Zeke and the level map</figcaption></figure>
+        </div>
+        <span class="chap-label">More in the gameplay footage</span>
+        <div class="chapters"><button type="button" class="seek" data-target="vidGameplay" data-t="0"><b>0:00</b>Level map</button><button type="button" class="seek" data-target="vidGameplay" data-t="48"><b>0:48</b>Abilities Build</button><button type="button" class="seek" data-target="vidGameplay" data-t="216"><b>3:36</b>Settings menu</button></div>
+      </div>
+
+      <!-- 05 ARCHITECTURE -->
+      <div class="ae-sec" id="ae-architecture">
+        <div class="ae-sec-head"><span class="n">05</span><h3>System Map</h3></div>
+        <p>A simplified map based on the real class hierarchy. Solid lines show inheritance. Dashed lines show what each class uses while the game runs.</p>
+        <div class="diagram-wrap">
+          <svg viewBox="0 0 960 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Combat system architecture diagram">
+  <defs>
+    <marker id="arrN" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#A9A69D"/>
+    </marker>
+    <marker id="arrS" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#E2A72E"/>
+    </marker>
+  </defs>
+
+  <!-- connector lines (drawn first, under boxes) -->
+  <g fill="none" stroke="#A9A69D" stroke-width="1.6">
+    <path d="M480,94 L480,196" marker-end="url(#arrN)"/>
+    <path d="M480,260 L480,300 L285,300 L285,362" marker-end="url(#arrN)"/>
+    <path d="M480,260 L480,362" marker-end="url(#arrN)"/>
+    <path d="M480,260 L480,318 L700,318 L700,362" marker-end="url(#arrN)"/>
+  </g>
+  <g fill="none" stroke="#E2A72E" stroke-width="1.6" stroke-dasharray="5 5">
+    <path d="M230,228 L300,228 L300,80 L378,80" marker-end="url(#arrS)"/>
+    <path d="M728,228 L582,228" marker-end="url(#arrS)"/>
+    <path d="M830,260 L830,458 L135,458 L135,260" marker-end="url(#arrS)"/>
+  </g>
+
+  <!-- EnemyBase -->
+  <g>
+    <rect x="380" y="30" width="200" height="64" fill="#1D1D1B" stroke="#F3F0E8" stroke-opacity="0.35"/>
+    <text x="480" y="58" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="15" fill="#F3F0E8" font-weight="600">EnemyBase</text>
+    <text x="480" y="76" text-anchor="middle" font-family="Source Sans 3, monospace" font-size="10" fill="#A9A69D">extends HealthSystem</text>
+  </g>
+
+  <!-- GridManager -->
+  <g>
+    <rect x="40" y="196" width="190" height="64" fill="#1D1D1B" stroke="#E2A72E" stroke-opacity="0.5"/>
+    <text x="135" y="224" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="15" fill="#F3F0E8" font-weight="600">GridManager</text>
+    <text x="135" y="242" text-anchor="middle" font-family="Source Sans 3, monospace" font-size="10" fill="#A9A69D">grid + danger levels</text>
+  </g>
+
+  <!-- AbilityV2 -->
+  <g>
+    <rect x="730" y="196" width="200" height="64" fill="#1D1D1B" stroke="#E2A72E" stroke-opacity="0.5"/>
+    <text x="830" y="224" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="15" fill="#F3F0E8" font-weight="600">AbilityV2</text>
+    <text x="830" y="242" text-anchor="middle" font-family="Source Sans 3, monospace" font-size="10" fill="#A9A69D">AbilityPattern data</text>
+  </g>
+
+  <!-- EnemyBoss -->
+  <g>
+    <rect x="380" y="196" width="200" height="64" fill="#1D1D1B" stroke="#F0674D" stroke-opacity="0.55"/>
+    <text x="480" y="224" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="15" fill="#F3F0E8" font-weight="600">EnemyBoss</text>
+    <text x="480" y="242" text-anchor="middle" font-family="Source Sans 3, monospace" font-size="10" fill="#A9A69D">phases + ally waves</text>
+  </g>
+
+  <!-- Heraldo -->
+  <g>
+    <rect x="200" y="362" width="170" height="70" fill="#1D1D1B" stroke="#F3F0E8" stroke-opacity="0.3"/>
+    <text x="285" y="391" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="14" fill="#F3F0E8" font-weight="600">Heraldo</text>
+    <text x="285" y="409" text-anchor="middle" font-family="Source Sans 3, monospace" font-size="10" fill="#A9A69D">3 HP-gated phases</text>
+  </g>
+
+  <!-- HeraldoCelestial -->
+  <g>
+    <rect x="400" y="362" width="180" height="70" fill="#1D1D1B" stroke="#F3F0E8" stroke-opacity="0.3"/>
+    <text x="490" y="391" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="14" fill="#F3F0E8" font-weight="600">HeraldoCelestial</text>
+    <text x="490" y="409" text-anchor="middle" font-family="Source Sans 3, monospace" font-size="10" fill="#A9A69D">phase-3 fusion</text>
+  </g>
+
+  <!-- Computer -->
+  <g>
+    <rect x="610" y="362" width="180" height="70" fill="#1D1D1B" stroke="#F3F0E8" stroke-opacity="0.3"/>
+    <text x="700" y="391" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="14" fill="#F3F0E8" font-weight="600">Computer</text>
+    <text x="700" y="409" text-anchor="middle" font-family="Source Sans 3, monospace" font-size="10" fill="#A9A69D">vulnerability window</text>
+  </g>
+</svg>
+
+          <div class="diagram-legend">
+            <span><i class="leg-line"></i> extends</span>
+            <span><i class="leg-line dashed"></i> uses at runtime</span>
+          </div>
+        </div>
+        
+        <div class="vid-cap">Fig. A: Simplified system map, based on the real class hierarchy</div>
+      </div>
+
+      <!-- 06 ROLE -->
+      <div class="ae-sec" id="ae-role">
+        <div class="ae-sec-head"><span class="n">06</span><h3>My Role</h3></div>
+        <p>I worked on both jobs, so design decisions and code decisions could be made together.</p>
+        <div class="role-split">
+          <div class="role-card"><h4>Combat Design</h4><ul>
+            <li>Designing the fights: telegraph timing, attack shapes and boss pacing</li>
+            <li>HP-gated phases and the mirror-the-player rule for Heraldo</li>
+            <li>The vulnerability-window loop for Computer</li>
+          </ul></div>
+          <div class="role-card"><h4>Gameplay Programming</h4><ul>
+            <li><code style="font-family:var(--font-mono);color:var(--safe);">GridManager</code> and the tile danger model</li>
+            <li><code style="font-family:var(--font-mono);color:var(--safe);">AbilityV2</code> and the <code style="font-family:var(--font-mono);color:var(--safe);">AbilityPattern</code> data pipeline</li>
+            <li>The <code style="font-family:var(--font-mono);color:var(--safe);">EnemyBase</code> → <code style="font-family:var(--font-mono);color:var(--safe);">EnemyBoss</code> hierarchy</li>
+          </ul></div>
+        </div>
+        <div class="note-box"><b>Note:</b> A downloadable build will come when VFX and audio polish is done. The full design documentation is available on request.</div>
+      </div>
+    </div>
+<div class="page-nav"><span class="label">Keep exploring</span><div class="links"><a href="friction.html" class="pill-link">Friction →</a><a href="unity-projects.html" class="pill-link">Unity projects →</a><a href="unreal.html" class="pill-link">Unreal →</a><a href="index.html" class="pill-link">Back to home →</a></div></div></div></main>
+<div class="overlay" id="projectOverlay" onclick="if(event.target===this)closeProject()">
+  <div class="pmodal" id="projectModal" role="dialog" aria-modal="true">
+    <button class="pmodal-close" onclick="closeProject()" aria-label="Close">✕</button>
+    <div id="projectModalBody"></div>
+  </div>
+</div>
+<div class="overlay" id="lightboxOverlay" onclick="closeLightbox()">
+  <div class="pmodal lightbox"><img id="lightboxImg" src="" alt=""></div>
+</div>
+<footer>
+  <div class="container">
+    © 2026 Mateo Bernal Arce · Level &amp; Combat Designer<br>
+    <span class="foot-links"><a href="mailto:Matthewbernalar@gmail.com">Matthewbernalar@gmail.com</a> · <a href="index.html">Back to home</a></span>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>

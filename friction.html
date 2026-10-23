@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friction | Mateo Bernal Arce</title>
+<meta name="description" content="Friction: a custom two-site VALORANT map set in the favelas of Rio de Janeiro, built around two elevators.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111111'/%3E%3Crect x='7' y='7' width='8' height='8' fill='%23C8452D'/%3E%3Crect x='17' y='17' width='8' height='8' fill='%23E2A72E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="ico-unity" viewBox="0 0 24 24"><path d="m12.9288 4.2939 3.7997 2.1929c.1366.077.1415.2905 0 .3675l-4.515 2.6076a.4192.4192 0 0 1-.4246 0L7.274 6.8543c-.139-.0745-.1415-.293 0-.3675l3.7972-2.193V0L1.3758 5.5977V16.793l3.7177-2.1456v-4.3858c-.0025-.1565.1813-.2682.318-.1838l4.5148 2.6076a.4252.4252 0 0 1 .2136.3676v5.2127c.0025.1565-.1813.2682-.3179.1838l-3.7996-2.1929-3.7178 2.1457L12 24l9.6954-5.5977-3.7178-2.1457-3.7996 2.1929c-.1341.082-.3229-.0248-.3179-.1838V13.053c0-.1565.087-.2956.2136-.3676l4.5149-2.6076c.134-.082.3228.0224.3179.1838v4.3858l3.7177 2.1456V5.5977L12.9288 0Z"/></symbol></svg>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+      MATEO BERNAL
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="angel-engine.html">Angel Engine</a><a href="friction.html" aria-current="page">Friction</a><a href="unity-projects.html">Unity projects</a><a href="unreal.html">Unreal</a><a href="index.html#contact">Contact</a>
+      <a href="media/Mateo_Bernal_Arce_CV.pdf" class="btn btn-ghost" download="Mateo_Bernal_Arce_CV.pdf">Download CV</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main class="page-main"><div class="container"><div class="crumbs"><a href="index.html">Home</a><span class="sep">/</span><span>Friction</span></div><article class="feature">
+      <div class="feature-media">
+        <img src="media/friction/fig-01.jpg" alt="Friction, Valorant custom map layout, top-down view" onclick="openLightbox(this)">
+        <div class="cap">Fig. 01: Final map layout, top-down view</div>
+        <div class="thumb-row">
+          <img src="media/friction/fig-02.jpg" alt="Friction map, verticality/height heatmap" onclick="openLightbox(this)">
+          <img src="media/friction/fig-03.jpg" alt="Friction map, layout with stair markers" onclick="openLightbox(this)">
+        </div>
+        <div class="cap">Fig. 02 and 03: Verticality heatmap and layout with stair markers</div>
+        <div class="thumb-row">
+          <img src="media/friction/fig-04.jpg" alt="Friction map, Site A environment reference" onclick="openLightbox(this)">
+          <img src="media/friction/fig-05.jpg" alt="Friction map, Site B environment reference" onclick="openLightbox(this)">
+        </div>
+        <div class="cap">Fig. 04 and 05: Site A and Site B, environment reference</div>
+        <div class="thumb-row">
+          <img src="media/friction/fig-06.jpg" alt="Friction map, elevator doors closed" onclick="openLightbox(this)">
+          <img src="media/friction/fig-07.jpg" alt="Friction map, elevator doors open" onclick="openLightbox(this)">
+        </div>
+        <div class="cap">Fig. 06 and 07: Elevator doors, closed and open</div>
+      </div>
+      <div class="feature-content">
+        <div class="tag-line">
+          <span class="tag">Level Design</span>
+          <span class="tag">Multiplayer Tactical Shooter</span>
+          <span class="tag"><svg class="ico-unity" aria-hidden="true"><use href="#ico-unity"/></svg>Unity Editor / Photoshop</span>
+        </div>
+        <h3>Friction: Custom VALORANT Map</h3>
+        <span class="role-meta">Solo level design project · April 2025</span>
+        <p>A two-site tactical map set in the hillside favelas of Rio de Janeiro. It is built around one question: what happens when one site sits far above the other? Kingdom Corporation runs radianite experiments under the neighborhood, and VALORANT's Protocol agents have come to shut it down. Site A is on the high ground, Site B is low, and mid is the only clean link between them.</p>
+
+        <h4 class="sub-h">The Mechanic: Elevators</h4>
+        <p>Two elevators are the main mechanic of mid. They are loud and open new strategies. Calling one tells the enemy team where you are, and in return you get a shortcut and a new angle when the doors open. Once an elevator starts, it cannot be stopped or used again until it finishes, so using it is a full commitment.</p>
+
+        <div class="stat-row">
+          <div><b>Medium</b>Map size (Bind/Split-comparable)</div>
+          <div><b>2 sites</b>A = high ground · B = low ground</div>
+          <div><b>~14s</b>Rotation time, mid to mid</div>
+          <div><b>2</b>Entries per site</div>
+        </div>
+
+        <h4 class="sub-h">From concept to final form</h4>
+        <p>The first paper sketch had the right skeleton, two sites and one mid, but not the details. Several sightlines were too wide and felt like an open arena instead of a tactical map, and the height changes were not clear enough to block out. The build pass added walls to tighten those angles and fixed where the stairs needed to go.</p>
+
+        <div class="note-box"><b>Note:</b> The full design document (narrative, moodboard, technical prop list) is available on request. A playable build will come when the visual pass is finished.</div>
+      </div>
+    </article>
+
+    <div class="page-nav"><span class="label">Keep exploring</span><div class="links"><a href="angel-engine.html" class="pill-link">Angel Engine →</a><a href="unity-projects.html" class="pill-link">Unity projects →</a><a href="unreal.html" class="pill-link">Unreal →</a><a href="index.html" class="pill-link">Back to home →</a></div></div></div></main>
+<div class="overlay" id="projectOverlay" onclick="if(event.target===this)closeProject()">
+  <div class="pmodal" id="projectModal" role="dialog" aria-modal="true">
+    <button class="pmodal-close" onclick="closeProject()" aria-label="Close">✕</button>
+    <div id="projectModalBody"></div>
+  </div>
+</div>
+<div class="overlay" id="lightboxOverlay" onclick="closeLightbox()">
+  <div class="pmodal lightbox"><img id="lightboxImg" src="" alt=""></div>
+</div>
+<footer>
+  <div class="container">
+    © 2026 Mateo Bernal Arce · Level &amp; Combat Designer<br>
+    <span class="foot-links"><a href="mailto:Matthewbernalar@gmail.com">Matthewbernalar@gmail.com</a> · <a href="index.html">Back to home</a></span>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

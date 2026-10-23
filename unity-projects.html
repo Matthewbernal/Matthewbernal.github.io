@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unity projects | Mateo Bernal Arce</title>
+<meta name="description" content="More Unity projects by Mateo Bernal Arce: Divine Redemption, XiaoXiao Racing, 2D Hitbox Studio and a neural network driving AI.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111111'/%3E%3Crect x='7' y='7' width='8' height='8' fill='%23C8452D'/%3E%3Crect x='17' y='17' width='8' height='8' fill='%23E2A72E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="theme-dark">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="ico-unity" viewBox="0 0 24 24"><path d="m12.9288 4.2939 3.7997 2.1929c.1366.077.1415.2905 0 .3675l-4.515 2.6076a.4192.4192 0 0 1-.4246 0L7.274 6.8543c-.139-.0745-.1415-.293 0-.3675l3.7972-2.193V0L1.3758 5.5977V16.793l3.7177-2.1456v-4.3858c-.0025-.1565.1813-.2682.318-.1838l4.5148 2.6076a.4252.4252 0 0 1 .2136.3676v5.2127c.0025.1565-.1813.2682-.3179.1838l-3.7996-2.1929-3.7178 2.1457L12 24l9.6954-5.5977-3.7178-2.1457-3.7996 2.1929c-.1341.082-.3229-.0248-.3179-.1838V13.053c0-.1565.087-.2956.2136-.3676l4.5149-2.6076c.134-.082.3228.0224.3179.1838v4.3858l3.7177 2.1456V5.5977L12.9288 0Z"/></symbol></svg>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+      MATEO BERNAL
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="angel-engine.html">Angel Engine</a><a href="friction.html">Friction</a><a href="unity-projects.html" aria-current="page">Unity projects</a><a href="unreal.html">Unreal</a><a href="index.html#contact">Contact</a>
+      <a href="media/Mateo_Bernal_Arce_CV.pdf" class="btn btn-ghost" download="Mateo_Bernal_Arce_CV.pdf">Download CV</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main class="page-main"><div class="container"><div class="crumbs"><a href="index.html">Home</a><span class="sep">/</span><span>Unity projects</span></div>
+  <div class="page-head">
+    <div class="eyebrow">Unity Engine</div>
+    <h1><svg class="ico-unity" aria-hidden="true"><use href="#ico-unity"/></svg>Unity projects</h1>
+    <p>Smaller projects and works in progress. Click a card to read more. Angel Engine and Friction have their own pages.</p>
+  </div>
+  <div class="grid-cards">
+      <div class="card" data-project="souls-like" onclick="openProject('souls-like')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openProject('souls-like')">
+        <div class="card-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12l6-8 10 8-10 8-6-8z"/></svg>
+          <span class="m-label">Media coming soon</span>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h4>Divine Redemption</h4><span class="status-pill">In dev</span></div>
+          <div class="tag-line"><span class="tag">3D Action</span><span class="tag"><svg class="ico-unity" aria-hidden="true"><use href="#ico-unity"/></svg>Unity / C#</span></div>
+          <p>A 3D practice project to test hitboxes, animations and model imports, built as a complete experience with three levels.</p>
+          <span class="card-tap">View details →</span>
+        </div>
+      </div>
+      <div class="card" data-project="mobile-racer" onclick="openProject('mobile-racer')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openProject('mobile-racer')">
+        <div class="card-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg>
+          <span class="m-label">Media coming soon</span>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h4>XiaoXiao Racing</h4><span class="status-pill">In dev</span></div>
+          <div class="tag-line"><span class="tag">Arcade Racing</span><span class="tag">Mobile</span></div>
+          <p>A touch-first arcade racer for short sessions, with drift feel, on-screen controls and tracks made for fast, thumb-friendly play.</p>
+          <span class="card-tap">View details →</span>
+        </div>
+      </div>
+      <div class="card" data-project="fighting-game" onclick="openProject('fighting-game')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openProject('fighting-game')">
+        <div class="card-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 20l4-16M15 4l4 16M4 12h16"/></svg>
+          <span class="m-label">Media coming soon</span>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h4>2D Hitbox Studio</h4><span class="status-pill">In dev</span></div>
+          <div class="tag-line"><span class="tag">2D Hitboxes</span><span class="tag"><svg class="ico-unity" aria-hidden="true"><use href="#ico-unity"/></svg>Unity / C# / Photoshop</span></div>
+          <p>A 2D hitbox studio with a character selector and a dynamic player controller. Every animation is hand-drawn.</p>
+          <span class="card-tap">View details →</span>
+        </div>
+      </div>
+      <div class="card" data-project="driving-ai" onclick="openProject('driving-ai')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openProject('driving-ai')">
+        <div class="card-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="18" r="2.4"/><circle cx="18" cy="18" r="2.4"/><path d="M8 18h8M9 14l2-6h2l2 6"/></svg>
+          <span class="m-label">Media coming soon</span>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h4>Neural Network Driving AI</h4><span class="status-pill">In dev</span></div>
+          <div class="tag-line"><span class="tag">Machine Learning</span><span class="tag"><svg class="ico-unity" aria-hidden="true"><use href="#ico-unity"/></svg>Unity / C#</span></div>
+          <p>Cars that learn to drive. A neural network agent trains generation after generation to read the track ahead and stay on it.</p>
+          <span class="card-tap">View details →</span>
+        </div>
+      </div>
+      <div class="ghost-card">
+        <span class="plus">+</span>
+        <p>More Unity projects coming soon, with WebGL builds and gameplay clips.</p>
+      </div>
+    </div>
+  <div class="page-nav"><span class="label">Keep exploring</span><div class="links"><a href="angel-engine.html" class="pill-link">Angel Engine →</a><a href="friction.html" class="pill-link">Friction →</a><a href="unreal.html" class="pill-link">Unreal →</a><a href="index.html" class="pill-link">Back to home →</a></div></div>
+</div></main>
+<div class="overlay" id="projectOverlay" onclick="if(event.target===this)closeProject()">
+  <div class="pmodal" id="projectModal" role="dialog" aria-modal="true">
+    <button class="pmodal-close" onclick="closeProject()" aria-label="Close">✕</button>
+    <div id="projectModalBody"></div>
+  </div>
+</div>
+<div class="overlay" id="lightboxOverlay" onclick="closeLightbox()">
+  <div class="pmodal lightbox"><img id="lightboxImg" src="" alt=""></div>
+</div>
+<footer>
+  <div class="container">
+    © 2026 Mateo Bernal Arce · Level &amp; Combat Designer<br>
+    <span class="foot-links"><a href="mailto:Matthewbernalar@gmail.com">Matthewbernalar@gmail.com</a> · <a href="index.html">Back to home</a></span>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
