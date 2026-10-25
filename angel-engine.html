@@ -46,7 +46,7 @@
         <div class="pillars">
           <div class="pillar"><span class="k">Pillar 01</span><h4>A grid that remembers danger</h4><p><code>GridManager</code> builds the board at runtime and every <code>Tile</code> tracks how dangerous it currently is.</p></div>
           <div class="pillar"><span class="k">Pillar 02</span><h4>Abilities as data</h4><p><code>AbilityV2</code> reads everything from an <code>AbilityPattern</code> asset. Making an attack means filling in data.</p></div>
-          <div class="pillar"><span class="k">Pillar 03</span><h4>One backbone, many enemies</h4><p><code>EnemyBase</code> carries shared movement and attacks; bosses only override what makes them different.</p></div>
+          <div class="pillar"><span class="k">Pillar 03</span><h4>One code, many enemies</h4><p><code>EnemyBase</code> carries shared movement and attacks; bosses only override what makes them different.</p></div>
         </div>
       </div>
 
@@ -109,7 +109,7 @@
 
       <!-- 03 ENEMIES -->
       <div class="ae-sec" id="ae-enemies">
-        <div class="ae-sec-head"><span class="n">03</span><h3>One Base Class, Three Different Bosses</h3></div>
+        <div class="ae-sec-head"><span class="n">03</span><h3>One Class, Many Different Bosses</h3></div>
         <p><code>EnemyBase</code> handles movement, attacks, stun and confuse for every enemy, from basic enemies to bosses. <code>EnemyBoss</code> adds phases and ally waves on top. Three subclasses only change what makes each boss different.</p>
         <div class="base-strip">
           <div class="base-card"><span class="k">EnemyBase · extends HealthSystem</span><h4>The shared backbone</h4><p>Movement, attacks, stun and confuse live here once, so every enemy behaves the same way on the grid.</p></div>
